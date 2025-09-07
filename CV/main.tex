@@ -1,0 +1,146 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{url}
+\usepackage{parskip} 	
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\usepackage{supertabular}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\usepackage{fontawesome5}
+
+\newenvironment{jobshort}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    }
+    {
+    }
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}    
+    }
+
+\begin{document}
+\pagestyle{empty} 
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{LU ZHUOYI} \\[7.5pt]
+\href{mailto:lzhuoyi001@e.ntu.edu.sg}{\raisebox{-0.05\height}\faEnvelope \ lzhuoyi001@e.ntu.edu.sg} \ $|$ \ 
+\url{https://lzhuoyi.github.io/Zhuoyi_Lu.github.io}\\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+Aug 2022 -- Jun 2026 & \textbf{Nanyang Technological University, Singapore} \hfill (CGPA: 4.64/5.00, Top 5\%) \\
+& Bachelor of Mechanical Engineering \\
+& Robotics and Mechatronics Stream, Minor in Mathematics \\
+Jun 2025 -- Aug 2025 & \textbf{Rice University, Houston, Texas, United States of America} \\
+& Summer Research Intern @RobotPI Lab under Prof. Kaiyu Hang\\
+Sep 2016 -- Jun 2022 & \textbf{Desheng School, Guangdong, China} \\
+& International Baccalaureate Diploma (IBDP): 41/45 \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EXPERTISE
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Data Analysis \& Machine Learning & Python (OOP), Conda/Anaconda \\
+Robotics & ROS1/2, C/C++, Arduino, CAN Protocol, SolidWorks\\ 
+Simulaton & Mujoco, Maniskill, MATLAB \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	Research EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Research Experience}
+\begin{joblong}{Robotics Research Centre (RRC), NTU Singapore}{May 2024 -- Present}
+\item Research the Series-Elastic Actuator model of HEBI motor. Designed experiments for motor parameter estimation e.g., Armature (Torque-Current), Velocity Constant (Voltage-Velocity) with PWM and PID control.
+\item Built dual planar and 6DOF arms with HEBI motors. Establish Tele-operation based Impedance control through Forward Kinematics and Jacobian.
+\end{joblong}
+
+\begin{joblong}{Rice University, Houston, Texas, United States of America}{Jun 2025 -- Aug 2025}
+\item Develop the codebase (e.g., Keyboard, XBOX joystick and VR Teleoperation Control) for XLeRobot: Fully Autonomous Household Dual-Arm Mobile Robot for \$660 (\url{https://github.com/Vector-Wangel/XLeRobot}). 
+\item RGB/Semantic Segmentation based Reinforcement Learning (PPO) via ManiSkill and zero-shot real-world deployment. Developed based on Stones's LeRobot Sim2Real codebase.
+\end{joblong}
+
+\begin{joblong}{Delta Electronics, Singapore}{Jan 2025 -- May 2025}
+\item Gazebo and Mujoco Simulation of quadruped jumping using virtual spring-damper system in each leg' hip and foot frame. Real World Deployment through Unitree Mujoco and ROS2.
+\item Integrate Mujoco with Pinocchio Library for a basic simulation framework in C++ for Manipulation/Locomotion Tasks.
+\end{joblong}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+\section{Projects}
+\begin{joblong}{Undergraduate Research Program (URECA) under Prof. K Jimmy Hsia}{Jul 2023 -- Jun 2024}
+\item Developed a new frontal photopolymerization strategy for functionally-graded materials based on UV attenuation. Published in URECA Papers and Posters.
+\end{joblong}
+
+\begin{joblong}{Kaggle Competition in Modeling earthquake richter and impacts }{Aug 2023 -- Dec 2023}
+\item Model earthquake damage grades in Nepal using location and construction data from Kaggle Dataset.
+\item Data cleaning, one-hot encoding, visualization, Random Forest, Logistic Regression, and KNN applied.
+\end{joblong}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\section{Publications}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+\item Yang, L., Turlapati, S.\,H., \textbf{Lu, Z.}, Lv, C., \& Campolo, D., “A Planning Framework for Stable Robust Multi-Contact Manipulation,” in *Proc. IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)*, Hangzhou, China, Oct. 2025.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	EXTRACURRICULAR
+%----------------------------------------------------------------------------------------
+\section{Extracurricular Activities}
+\begin{joblong}{Xinyuan Charity Center, Guangdong, China}{Aug 2020 -- Aug 2021}
+\item Organized drawing lessons for autistic children to help them adapt to school and build social relationships.
+\end{joblong}
+
+\begin{joblong}{Residential Hall Garden Leader, NTU Singapore}{Aug 2023 -- Present}
+\item Led weekly gardening activities, including seed germination, watering, and tool maintenance.
+\end{joblong}
+
+%----------------------------------------------------------------------------------------
+%	HONORS
+%----------------------------------------------------------------------------------------
+\section{Honors and Awards}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+\item Dean’s List Certificate AY2023/24 (Top 5\%), Mechanical Engineering, NTU Singapore
+\item Dean’s List Certificate AY2024/25 (Top 5\%), Mechanical Engineering, NTU Singapore
+\item URECA Undergraduate Research Program 2023/2024 Certificate
+\end{itemize}
+
+\vfill
+\center{\footnotesize Last updated: \today}
+
+\end{document}

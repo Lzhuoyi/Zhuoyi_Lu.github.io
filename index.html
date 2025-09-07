@@ -36,8 +36,6 @@
              font-weight: 600;
              color: #0f4c97;
          }
-         h3 {
-         }
          a {
              color: #0f4c97;
          }
@@ -109,21 +107,28 @@
                         <div class="row">
                             <div class="col-md-8">
                                 <p>
-                                    I am an undergraduate student at Nanyang Technological University (NTU) Singapore, 
+                                    I am Lu Zhuoyi, an undergraduate student at Nanyang Technological University (NTU) Singapore, 
                                     pursuing a Bachelor of Mechanical Engineering with specialization in Robotics and Mechatronics Stream. 
-                                    With a CGPA of 4.64/5.00 and top 5% First Class Honor, I am passionate about robotics research 
-                                    and control systems.
+                                    I have exhibited excellence in academic performance throughout my 4 years of Bachelor's degree, achieving a CGPA of 4.64/5.00 
+                                    and earning two consecutive Dean's List certificates for academic years 2023/24 and 2024/25 (Top 5%).
                                 </p>
                                 
                                 <p>
-                                    My research interests focus on <nobr style="font-weight: bold;">Compliance Force Control in Manipulation and Locomotion</nobr> 
-                                    for quadruped and bipedal robots. I work on electromechanical modeling of series-elastic actuators, 
-                                    impedance control strategies, and developing robust control systems for challenging terrain navigation.
+                                    My research interest mainly lies in <nobr style="font-weight: bold;">legged loco-manipulation</nobr>, 
+                                    which aims to amplify manipulation capability by considering whole body control of the legged robot as a mobile base. 
+                                    With a growing fascination for motor dynamics and robot kinematics, I have been working on electromechanical modeling 
+                                    of series-elastic actuators, impedance control strategies, and developing robust control systems for challenging terrain navigation.
                                 </p>
                                 
                                 <p>
-                                    More details can be found in my <a href="CV/Resume_Lu Zhuoyi.pdf">resume <i class="fa fa-file-pdf"></i></a> 
-                                    and <a href="CV/Statement-Of-Pupose_Lu-Zhuoyi - v2.pdf">statement of purpose <i class="fa fa-file-pdf"></i></a>.
+                                    I have gained extensive research experience through internships at the Robotics Research Centre (NTU), Delta Electronics Singapore, 
+                                    and Rice University's Robot-Pi Lab. My work spans from motor parameter estimation and dual-arm manipulation to quadruped jumping 
+                                    control and mobile manipulator development. I am also a co-author of a paper accepted at IROS 2025.
+                                </p>
+                                
+                                <p>
+                                    More details can be found in my <a href="CV/Resume_Lu_Zhuoyi.pdf">resume <i class="fa fa-file-pdf"></i></a> 
+                                    and <a href="CV/Statement-Of-Purpose_Lu-Zhuoyi.pdf">statement of purpose <i class="fa fa-file-pdf"></i></a>.
                                 </p>
                             </div>
                             <div class="col-md-4">
@@ -141,7 +146,17 @@
                     <dl>
                         <dt>IROS 2025</dt>
                             <dd>
-                                <p><a href="IROS_2025">A Planning Framework for Stable Robust Multi-Contact Manipulation</a> has been submitted to IROS 2025.         
+                                <p><a href="publication/A Planning Framework for Stable Robust Multi-Contact Manipulation IROS2025.pdf">A Planning Framework for Stable Robust Multi-Contact Manipulation</a> has been accepted for presentation at IROS 2025 in Hangzhou, China.         
+                                </p>
+                            </dd>
+                        <dt>Summer Research Internship</dt>
+                            <dd>
+                                <p>Completed summer research internship at Rice University's Robot-Pi Lab under Prof. Kaiyu Hang, working on XLeRobot mobile manipulator development and Sim2Real reinforcement learning.
+                                </p>
+                            </dd>
+                        <dt>Dean's List Recognition</dt>
+                            <dd>
+                                <p>Achieved Dean's List certificates for both AY2023/24 and AY2024/25, maintaining top 5% academic performance at NTU.
                                 </p>
                             </dd>
                     </dl>
@@ -155,34 +170,70 @@
                         <dl>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <dt style="font-size: 1.12em;">Series-Elastic Actuator Electromechanical Modeling</dt>
+                                    <dt style="font-size: 1.12em;">HEBI Motor Electromechanical Modeling & Dual-Arm Manipulation</dt>
                                     <ul>
-                                        <li>Research on electromechanical model of Series-Elastic Actuator using HEBI motors</li>
-                                        <li>Designed experiments to estimate motor parameters through MATLAB API</li>
-                                        <li>Discovered discrepancies between estimated parameters and datasheet values</li>
-                                        <li>Analyzed experimental errors, motor aging phenomena, and related factors</li>
+                                        <li>Research on Series-Elastic Actuator model of HEBI motors at Robotics Research Centre, NTU</li>
+                                        <li>Designed experiments for motor parameter estimation including Armature constant (Kt) and Velocity constant (Kv) with PWM and PID control</li>
+                                        <li>Built dual planar and 6DOF arms with HEBI motors and established teleoperation-based impedance control</li>
+                                        <li>Derived Forward Kinematics and Jacobian for impedance control implementation</li>
+                                        <li>Developed understanding of how motor dynamics shapes overall robot performance</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <dt style="font-size: 1.12em;">Impedance Control for Robotic Arms</dt>
+                                    <dt style="font-size: 1.12em;">Multi-Contact Manipulation Planning Framework</dt>
                                     <ul>
-                                        <li>Built planar dual-arm and 6-DOF robotic arm using HEBI motors</li>
-                                        <li>Implemented impedance control with spring-damper system attached to end-effector</li>
-                                        <li>Characterized end-point position changes using joystick inputs via Teleoperation</li>
-                                        <li>Mapped Cartesian forces to joint torques using Jacobian transformation</li>
+                                        <li>Co-authored paper "A Planning Framework for Stable Robust Multi-Contact Manipulation" accepted at IROS 2025</li>
+                                        <li>Helped with multi-manipulator setup (2DOF dual arm + 7DOF Kinova) for planar peg-in-hole task</li>
+                                        <li>Extended to Multiple Peg-in-Hole manipulation scenarios</li>
+                                        <li>Understood principles of optimizing DMP/trajectory parameters using BBO with cost functions modeling robot-world interaction</li>
+                                        <li>Established pipeline integrating perception, planning, and manipulation (ongoing project)</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <dt style="font-size: 1.12em;">Quadruped Robot Jumping Simulation</dt>
+                                    <dt style="font-size: 1.12em;">Quadruped Jumping Control & Compliance Strategy</dt>
                                     <ul>
-                                        <li>Implemented virtual spring-damper system between hip and foot of robot legs</li>
-                                        <li>Enabled upward jumping motion through Gazebo simulations using Unitree guide</li>
-                                        <li>Studied optimal control and sim-to-real gap for real-world implementation</li>
+                                        <li>Designed compliance control strategy for quadruped jumping at Delta Electronics</li>
+                                        <li>Implemented virtual spring-damper system between hip and foot frames for each leg</li>
+                                        <li>Derived Forward/Inverse Kinematics and Jacobian for each leg as 3DOF manipulator</li>
+                                        <li>Modeled Cartesian forces at foot using impedance controller for jumping amplitude and direction control</li>
+                                        <li>Achieved forward/backward and CW/CCW jumping in both Gazebo/Mujoco simulation and real Unitree Go2 robot</li>
                                         <li>Research inspired by "Quadruped-Frog: Rapid Online Optimization of Continuous Quadruped Jumping"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <dt style="font-size: 1.12em;">XLeRobot Mobile Manipulator Development</dt>
+                                    <ul>
+                                        <li>Developed control codebase for XLeRobot: Fully Autonomous Household Dual-Arm Mobile Robot ($660)</li>
+                                        <li>Implemented Keyboard, XBOX joystick, and VR teleoperation control interfaces</li>
+                                        <li>Built RGB/Semantic Segmentation based Reinforcement Learning (PPO) via ManiSkill</li>
+                                        <li>Developed zero-shot real-world deployment based on Stone's LeRobot Sim2Real codebase</li>
+                                        <li>Worked on low-cost mobile manipulator for extended manipulation workspace</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <dt style="font-size: 1.12em;">URECA Research: Frontal Photopolymerization</dt>
+                                    <ul>
+                                        <li>Developed new frontal photopolymerization strategy for functionally-graded materials</li>
+                                        <li>Based on UV attenuation principles under Prof. K Jimmy Hsia</li>
+                                        <li>Published in URECA Papers and Posters</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <dt style="font-size: 1.12em;">Earthquake Damage Modeling</dt>
+                                    <ul>
+                                        <li>Kaggle competition project modeling earthquake Richter scale and impacts</li>
+                                        <li>Modeled earthquake damage grades in Nepal using location and construction data</li>
+                                        <li>Applied data cleaning, one-hot encoding, visualization, Random Forest, Logistic Regression, and KNN</li>
                                     </ul>
                                 </div>
                             </div>
@@ -210,7 +261,7 @@
                                                 <br>
                                                 <nobr style="font-weight: bold;">Lin Yang, Sri Harsha Turlapati, Zhuoyi Lu, Chen Lv, Domenico Campolo</nobr>
                                                 <br>
-                                                <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>
+                                                <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, Hangzhou, China, Oct. 2025
                                             </p>
                                             <p>
                                                 <a href="publication/A Planning Framework for Stable Robust Multi-Contact Manipulation IROS2025.pdf"><i class="fa fa-file-pdf"></i> PDF</a>
@@ -245,9 +296,18 @@
                                         <li>Robotics and Mechatronics Stream</li>
                                         <li>CGPA: 4.64/5.00, Top 5% First Class Honor</li>
                                         <li>Minor in Mathematics</li>
+                                        <li>Dean's List Certificate AY2023/24 & AY2024/25</li>
                                     </ul>
                                 </dd>
-                                <dt>Desheng School, Guangdong China | Sep 2016 - Jun 2026</dt>
+                                <dt>Rice University | Jun 2025 - Aug 2025</dt>
+                                <dd>
+                                    <ul>
+                                        <li>Summer Research Intern @RobotPI Lab</li>
+                                        <li>Under Prof. Kaiyu Hang</li>
+                                        <li>Mobile Manipulator Development</li>
+                                    </ul>
+                                </dd>
+                                <dt>Desheng School, Guangdong China | Sep 2016 - Jun 2022</dt>
                                 <dd>
                                     <ul>
                                         <li>International Baccalaureate Diploma Program (IBDP)</li>
@@ -258,24 +318,34 @@
                         </div>
                         <!-- Work Experience Column -->
                         <div class="col-md-6">
-                            <h2>Work Experience</h2>
+                            <h2>Research Experience</h2>
                             <div style="padding: 10px">
                                 <dt>Robotics Research Centre (RRC) | NTU Singapore | May 2024 - Present</dt>
                                 <dd>
                                     <ul>
-                                        <li>Motor Drive and Impedance Control Internship</li>
-                                        <li>Electromechanical modeling of Series-Elastic Actuator</li>
-                                        <li>Built dual planar arm and 6DOF arm using HEBI motors</li>
-                                        <li>Impedance Control testing with joystick inputs</li>
+                                        <li>Research on Series-Elastic Actuator model of HEBI motors</li>
+                                        <li>Designed experiments for motor parameter estimation (Kt, Kv)</li>
+                                        <li>Built dual planar and 6DOF arms with HEBI motors</li>
+                                        <li>Established teleoperation-based impedance control</li>
+                                        <li>Derived Forward Kinematics and Jacobian</li>
                                     </ul>
                                 </dd>
-                                <dt>Delta Electronics | Singapore | Jan 2025 - Present</dt>
+                                <dt>Rice University Robot-Pi Lab | Houston, Texas | Jun 2025 - Aug 2025</dt>
                                 <dd>
                                     <ul>
-                                        <li>Mobile Robot Internship</li>
-                                        <li>Can Protocol and PCAN Api for wireless charger communication</li>
-                                        <li>3D/2D map construction using 3D Lidar and ROS Nav2</li>
-                                        <li>Quadruple jumping simulation in Mujoco</li>
+                                        <li>Developed control codebase for XLeRobot mobile manipulator</li>
+                                        <li>Implemented Keyboard, XBOX joystick, and VR teleoperation</li>
+                                        <li>Built RGB/Semantic Segmentation based RL (PPO) via ManiSkill</li>
+                                        <li>Zero-shot real-world deployment using Stone's LeRobot Sim2Real</li>
+                                    </ul>
+                                </dd>
+                                <dt>Delta Electronics | Singapore | Jan 2025 - May 2025</dt>
+                                <dd>
+                                    <ul>
+                                        <li>Quadruped jumping simulation using virtual spring-damper system</li>
+                                        <li>Gazebo and Mujoco simulation with Unitree Go2</li>
+                                        <li>Real-world deployment through Unitree Mujoco and ROS2</li>
+                                        <li>Integrated Mujoco with Pinocchio Library for C++ simulation framework</li>
                                     </ul>
                                 </dd>
                             </div>
@@ -287,17 +357,35 @@
                     <h1>Life 🏔️🧗‍🏂🛹🏜️🗽⛹️🚀</h1>
                     Life is more than just research and robots.
                     <div style="padding: 20px;">
+                        <h2>Extracurricular Activities</h2>
+                        <dl>
+                            <dt>Xinyuan Charity Center | Guangdong, China | Aug 2020 - Aug 2021</dt>
+                            <dd>
+                                <ul>
+                                    <li>Organized drawing lessons for autistic children to help them adapt to school and build social relationships</li>
+                                </ul>
+                            </dd>
+                            <dt>Residential Hall Garden Leader | NTU Singapore | Aug 2023 - Present</dt>
+                            <dd>
+                                <ul>
+                                    <li>Led weekly gardening activities, including seed germination, watering, and tool maintenance</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        
+                        <h2>Honors and Awards</h2>
+                        <ul>
+                            <li>Dean's List Certificate AY2023/24 (Top 5%), Mechanical Engineering, NTU Singapore</li>
+                            <li>Dean's List Certificate AY2024/25 (Top 5%), Mechanical Engineering, NTU Singapore</li>
+                            <li>URECA Undergraduate Research Program 2023/2024 Certificate</li>
+                        </ul>
+                        
+                        <h2>Technical Skills</h2>
                         <p>
-                            When I'm not working on robotics research, I enjoy organizing drawing lessons for autistic children 
-                            at Xinyuan Charity Center, leading weekly gardening activities as a Residential Hall Garden Leader at NTU, 
-                            and exploring new technologies in robotics and automation.
-                        </p>
-                        <p>
+                            <strong>Data Analysis & Machine Learning:</strong> Python (OOP), Conda/Anaconda<br>
+                            <strong>Robotics:</strong> ROS1/2, C/C++, Arduino, CAN Protocol, SolidWorks<br>
+                            <strong>Simulation:</strong> Mujoco, Maniskill, MATLAB<br>
                             <strong>Languages:</strong> English (IELTS Band 7), Chinese (Mandarin), Cantonese (Native)
-                        </p>
-                        <p>
-                            <strong>Technical Skills:</strong> Python, C/C++, Arduino, ROS, MATLAB, SolidWorks, Linux, 
-                            Machine Learning, Data Analysis, PCAN Api, Gazebo, Mujoco
                         </p>
                     </div>
                 </div>
